@@ -16,7 +16,5 @@
     "default_popup": "src/browser_action/browser_action.html"
   },
   "permissions": [
-    "clipboardRead",
-    "clipboardWrite"
   ]
 }
