@@ -1,0 +1,49 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		/* padding: 10px; */
+		min-width: 400px;
+		/* height: 200px; */
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	textarea {
+		min-width: 100px;
+		max-width: 400px;
+		min-height: 50px;
+	}
+
+	#err {
+		color: red;
+	}
+	a{
+		color:#00aced;
+	}
+</style>
+
+<script src="script.js"></script>
+
+<div id="mainPopup">
+	<h1>chrome-unserialize-php</h1>
+	<textarea name="php" id="php" cols="30" rows="5">a:2:{s:5:"hello";i:42;s:5:"world";R:2;}</textarea>
+	<br />
+	<button id="trim-quotes">Trim Quotes</button>
+	<br />
+	<br />
+	<textarea name="var_export" id="var_export" cols="30" rows="5">Result</textarea>
+	<br />
+	<span id="err"></span>
+	<br />
+
+	<label><input type="radio" id="radio_var_export" name="group1" checked> var_export</label>
+
+	<label><input type="radio" id="radio_JSON" name="group1"> JSON</label>
+	<br />
+	<button id="convert">Convert</button>
+	<br />
+	<small>Thanks <a href="https://github.com/bd808/php-unserialize-js">https://github.com/bd808/php-unserialize-js</a> and <a href="http://locutus.io/php/var_export/">http://locutus.io/php/var_export/</a></small>
+</div>
